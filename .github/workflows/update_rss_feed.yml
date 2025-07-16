@@ -1,0 +1,55 @@
+# .github/workflows/update_rss_feed.yml
+
+name: Update Stock Hotspots RSS Feed
+
+# 配置工作流的触发器
+on:
+  # 每日定时运行，例如每天 UTC 时间 01:00 (大约北京时间上午 9:00)
+  # 你可以根据需要调整 'cron' 表达式
+  schedule:
+    - cron: '0 1 * * *'
+  # 允许手动从 GitHub Actions 页面触发此工作流
+  workflow_dispatch:
+
+# 定义工作流中的任务
+jobs:
+  build:
+    # 指定运行此任务的虚拟机环境
+    runs-on: ubuntu-latest
+
+    # 定义任务中的步骤
+    steps:
+    - name: Checkout repository # 步骤1: 检出你的代码仓库
+      uses: actions/checkout@v4
+
+    - name: Set up Python # 步骤2: 设置 Python 环境
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
+
+    - name: Install dependencies # 步骤3: 安装 Python 依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests # 你的 stock_hotspots_scraper.py 依赖 requests
+
+    - name: Run Python script to generate feed # 步骤4: 运行 Python 脚本生成 RSS Feed
+      # 这里将 GitHub Secret 作为环境变量传递给脚本
+      env:
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }} # 将 EMAIL_PASSWORD 密钥作为环境变量传入
+      run: python stock_hotspots_scraper.py
+
+    - name: Commit and push if changes # 步骤5: 提交并推送更改（如果 RSS 文件有更新）
+      run: |
+        # 配置 Git 用户信息，这是自动提交所必需的
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+        # 添加生成的 RSS XML 文件到暂存区
+        git add stock_hotspots_feed.xml
+
+        # 检查是否有实际的更改需要提交，如果没有，则避免空提交
+        git diff --quiet --exit-code || git commit -m "Automated: Update stock hotspots RSS feed"
+
+        # 推送更改到 main 分支
+        # 使用 || true 是为了防止在没有新更改时 push 失败而导致整个 Action 失败
+        git push origin main || true
