@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>股市热点新闻订阅</title>
+    <link>http://yourwebsite.com/stock_hotspots_feed.xml</link>
+    <description>每日更新的股市热点和重要新闻摘要。</description>
+    <atom:link href="http://yourwebsite.com/stock_hotspots_feed.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 16 Jul 2025 14:23:05 +0000</lastBuildDate>
+    <item>
+      <title>开盘：美股周三高开 投资者权衡银行财报与通胀数据</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2681696.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 北京时间7月16日晚，美股周三高开。投资者正评估大型银行财报表现。美国6月PPI基本持平，意外不及预期。特朗普继续对多国发出关税威胁。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2681696.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2681696.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>10倍佣金！招商证券武汉营业部赢了官司，输了什么？</title>
+      <link>https://finance.sina.com.cn/stock/quanshang/qsyj/2025-07-16/doc-inffssqk0902328.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;来源：券业行家 10倍佣金差额引发客户不满！招商证券赢了官司，输了什么？ 久违的“千2.5”佣金，惊现券业江湖。一位在招商证券炒股十余年的老客户...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/quanshang/qsyj/2025-07-16/doc-inffssqk0902328.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/quanshang/qsyj/2025-07-16/doc-inffssqk0902328.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>不再锚定“最低价”，国家药品集采迎八大变化</title>
+      <link>https://finance.sina.com.cn/roll/2025-07-16/doc-inffssqc4341281.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月15日，国家组织药品联合采购办公室（下称“联采办”）发布了《关于开展第十一批国家组织药品集中采购相关药品信息填报工作的通知》，标志着第十一批药品集采正式启动。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/roll/2025-07-16/doc-inffssqc4341281.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/roll/2025-07-16/doc-inffssqc4341281.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>Rigetti公司36量子位系统刷新保真度纪录</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0901355.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 量子硬件公司Rigetti Computing（RGTI）周四早间一度上涨逾17%，此前该公司宣布在其下一代模块化平台上取得重大技术突破。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0901355.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0901355.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>美国众议员Hill：众议院已有足够票数推进三项加密货币法案</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4340834.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 美国众议院金融服务委员会主席French Hill示，众议院已有足够票数来推进三项与加密货币有关的法案，包括参议院的《天才法案》。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4340834.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4340834.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>邓荣辉获批担任华润银行董事</title>
+      <link>https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqn2684643.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 7月16日金融一线消息，广东金融监管局今日发布关于邓荣辉珠海华润银行董事任职资格的批复，核准邓荣辉珠海华润银行股份有限公司董事的任职资格。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqn2684643.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqn2684643.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>黄海量获批担任中银消金独立董事</title>
+      <link>https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqk0902478.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月16日金融一线消息，国家金融监督管理总局上海监管局今日发布关于黄海量中银消费金融有限公司独立董事任职资格的批复，核准黄海量中银消费金融有限公司独立董事的任职资...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqk0902478.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqk0902478.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>汪永庆获批担任交银投资董事</title>
+      <link>https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqc4341990.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月18日金融一线消息，国家金融监督管理总局上海监管局今日发布关于汪永庆交银金融资产投资有限公司董事任职资格的批复，核准汪永庆交银金融资产投资有限公司董事的任职资...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqc4341990.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jryx/hm/2025-07-16/doc-inffssqc4341990.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>违反人民币流通管理规定，河南两家邮储银行营业所被罚</title>
+      <link>https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqc4342734.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月16日金融一线消息，中国人民银行河南省分行行政处罚决定信息公示表显示，中国邮政储蓄银行股份有限公司新密市东大街营业所因违反人民币流通管理规定...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqc4342734.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqc4342734.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>法拉第未来获1.05亿美元融资 助力FX Super One量产及美国电动车业务扩张</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4342776.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;北京时间7月16日晚间消息，法拉第未来宣布，签订约1.05亿美元的融资协议。 该公司预计，融资到位后将拥有足够资金推出新产品FX Super One。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4342776.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqc4342776.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>雷诺股价暴跌 管理层更迭引发市场震荡</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk5911824.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 美东时间周三，雷诺汽车（场外交易代码：RNSDF、RNLSY）股价一度重挫16%，此前该公司下调2025年业绩指引并任命财务总监明托（Minto）为临时首席执行官。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk5911824.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk5911824.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>反洗钱系列规章重磅升级！可疑交易“证据链”保存期由5年延长至10年，非现场检查也来了！</title>
+      <link>https://finance.sina.com.cn/money/bank/bank_hydt/2025-07-16/doc-inffssqk5913406.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;日前，人民银行研究起草了《中国人民银行关于修改和废止部分规章的决定（征求意见稿）》并向社会公开征求意见。 意见稿对2部规章的部分条款予以修改，并废止1部规章。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/money/bank/bank_hydt/2025-07-16/doc-inffssqk5913406.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/money/bank/bank_hydt/2025-07-16/doc-inffssqk5913406.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>大涨250%！停牌核查！</title>
+      <link>https://finance.sina.com.cn/stock/s/2025-07-16/doc-inffssqn2689690.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;来源：中国基金报 中国基金报记者 李智 累计大涨超250%，*ST广道再次停牌核查。 *ST广道停牌核查 7月16日晚间，*ST广道发布公告称，公司股票自7月17日起停牌...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/s/2025-07-16/doc-inffssqn2689690.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/s/2025-07-16/doc-inffssqn2689690.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>知情人士：宗庆后，不止这四个孩子</title>
+      <link>https://finance.sina.com.cn/chanjing/gsnews/2025-07-16/doc-inffssqk0910020.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;来源丨凤凰网《风暴眼》 作者丨李秋涵 核心提示： 接近宗家的知情人士透露： 1．在2018年宗家为宗庆后去世的父亲编写年谱，由此确认在宗馥莉之外，宗庆后还有6个孩子。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/chanjing/gsnews/2025-07-16/doc-inffssqk0910020.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/chanjing/gsnews/2025-07-16/doc-inffssqk0910020.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>惠州博罗长江村镇银行被罚20.1万元：违反人民币流通管理规定等</title>
+      <link>https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqk0906106.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月16日金融一线消息，中国人民银行惠州市分行行政处罚信息公示表显示，惠州博罗长江村镇银行股份有限公司违反人民币流通管理规定；未制定数据安全管理制度；未制定网络安...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqk0906106.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jryx/fd/2025-07-16/doc-inffssqk0906106.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>科兴“宫斗”背后，第一大股东强新资本的算盘</title>
+      <link>https://finance.sina.com.cn/jjxw/2025-07-16/doc-inffssqk0907226.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;7月16日，就风口浪尖的科兴生物股权之争，接近此事件的人士对第一财经记者表示，科兴生物现任董事长李嘉强并无意长期担任董事长职位...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/jjxw/2025-07-16/doc-inffssqk0907226.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/jjxw/2025-07-16/doc-inffssqk0907226.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>力拓二季度铁矿石发运量环比增长13%</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0906480.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;力拓集团（RIO）公布第二季度铁矿石发运量环比增长13%，但同比仍下降1%。 该公司指出，受美国对加拿大铝制品加征关税影响，相关成本达3亿美元。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0906480.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0906480.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>早盘：美股涨跌不一纳指转跌 市场关注财报与通胀数据</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0907621.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 北京时间7月16日晚，美股周三早盘涨跌不一，纳指转跌。投资者正评估大型银行财报表现。美国6月PPI基本持平，意外不及预期。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0907621.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqk0907621.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>福特汽车二季度财报将计入5.7亿美元计提费用</title>
+      <link>https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2691691.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt;福特汽车公司周三宣布，因部分车型燃油喷射器修复方案计提5.7亿美元费用，该支出将计入2025年第二季度财报。 此前该公司因燃油泄漏问题在美国召回694271辆汽车...&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2691691.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/stock/usstock/c/2025-07-16/doc-inffssqn2691691.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+    <item>
+      <title>泰国将向美国提出新方案以避免关税</title>
+      <link>https://finance.sina.com.cn/world/2025-07-16/doc-inffssqn2693069.shtml</link>
+      <description>&lt;p&gt;来源: 新浪财经&lt;/p&gt;&lt;p&gt; 泰国财政部长将于周三与美国贸易官员举行会谈，届时将提出新的提议，这是泰国为避免美国总统特朗普威胁征收的36%关税所作的最新努力。&lt;/p&gt;&lt;p&gt;&lt;a href="https://finance.sina.com.cn/world/2025-07-16/doc-inffssqn2693069.shtml"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://finance.sina.com.cn/world/2025-07-16/doc-inffssqn2693069.shtml</guid>
+      <pubDate>Wed, 16 Jul 2025 22:23:05 +0800</pubDate>
+    </item>
+  </channel>
+</rss>
