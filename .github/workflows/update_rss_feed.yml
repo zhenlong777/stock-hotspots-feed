@@ -27,12 +27,12 @@ jobs:
     - name: Set up Python # 步骤2: 设置 Python 环境
       uses: actions/setup-python@v5
       with:
-        python-version: '3.x' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
+        python-version: '3.10' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
 
     - name: Install dependencies # 步骤3: 安装 Python 依赖
       run: |
         python -m pip install --upgrade pip
-        pip install requests feedgen # 你的 stock_hotspots_scraper.py 依赖 requests
+        pip install requests feedgen 
 
     - name: Run Python script to generate feed # 步骤4: 运行 Python 脚本生成 RSS Feed
       # 这里将 GitHub Secret 作为环境变量传递给脚本
@@ -45,6 +45,9 @@ jobs:
         # 配置 Git 用户信息，这是自动提交所必需的
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: List files in directory after script run
+      run: ls -la # 检查 stock_hotspots_feed.xml 是否存在于当前目录
 
         # 添加生成的 RSS XML 文件到暂存区
         git add stock_hotspots_feed.xml
