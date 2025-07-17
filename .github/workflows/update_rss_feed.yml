@@ -60,3 +60,6 @@ jobs:
 
     - name: List files in directory after script run
       run: ls -la # 检查 stock_hotspots_feed.xml 是否存在于当前目录
+
+    - name: Display RSS feed content
+      run: cat stock_hotspots_feed.xml # 打印文件内容到日志
