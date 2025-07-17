@@ -16,6 +16,8 @@ jobs:
   build:
     # 指定运行此任务的虚拟机环境
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许工作流对仓库内容进行写入操作
 
     # 定义任务中的步骤
     steps:
