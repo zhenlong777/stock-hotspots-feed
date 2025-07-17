@@ -46,8 +46,6 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-    - name: List files in directory after script run
-      run: ls -la # 检查 stock_hotspots_feed.xml 是否存在于当前目录
 
         # 添加生成的 RSS XML 文件到暂存区
         git add stock_hotspots_feed.xml
@@ -58,3 +56,7 @@ jobs:
         # 推送更改到 main 分支
         # 使用 || true 是为了防止在没有新更改时 push 失败而导致整个 Action 失败
         git push origin main || true
+
+
+    - name: List files in directory after script run
+      run: ls -la # 检查 stock_hotspots_feed.xml 是否存在于当前目录
