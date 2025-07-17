@@ -116,7 +116,17 @@ class StockHotspotsScraper:
             content = f"<p>来源: {news_item.get('source', '')}</p><p>{news_item.get('summary', '')}</p><p><a href=\"{news_item['url']}\">阅读原文</a></p>"
             fe.content(content, type='html')
         try:
-            fg.rss_file(output_file, pretty=True)
+            # 先生成到字符串
+            rss_content = fg.rss_str(pretty=True).decode('utf-8')
+            # 在</rss>标签前添加时间戳注释，确保每次都有差异
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            rss_content = rss_content.replace(
+                "</rss>",
+                f"<!-- Generated at: {current_time} -->\n</rss>"
+            )
+            # 写入文件
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(rss_content)
             print(f"✅ RSS Feed 生成成功: {output_file}")
             return True
         except Exception as e:

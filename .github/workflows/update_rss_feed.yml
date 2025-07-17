@@ -27,7 +27,7 @@ jobs:
     - name: Set up Python # 步骤2: 设置 Python 环境
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
+        python-version: '3.13' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
 
     - name: Install dependencies # 步骤3: 安装 Python 依赖
       run: |
@@ -40,23 +40,38 @@ jobs:
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }} # 将 EMAIL_PASSWORD 密钥作为环境变量传入
       run: python stock_hotspots_scraper.py
 
-    - name: Commit and push if changes # 步骤5: 提交并推送更改（如果 RSS 文件有更新）
+    - name: Debug - Check file changes
       run: |
-        # 配置 Git 用户信息，这是自动提交所必需的
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        echo "=== 检查文件状态 ==="
+        git status
+        echo "=== 检查文件内容 ==="
+        if [ -f stock_hotspots_feed.xml ]; then
+          echo "文件存在，显示前20行内容："
+          head -20 stock_hotspots_feed.xml
+          echo "=== 文件大小和时间戳 ==="
+          ls -la stock_hotspots_feed.xml
+        else
+          echo "文件不存在"
+        fi
+        echo "=== Git diff ==="
+        git diff stock_hotspots_feed.xml || echo "没有差异"
 
-
-        # 添加生成的 RSS XML 文件到暂存区
+    - name: Force update RSS feed
+      run: |
+        # 确保文件被Git跟踪
         git add stock_hotspots_feed.xml
-
-        # 检查是否有实际的更改需要提交，如果没有，则避免空提交
-        git diff --quiet --exit-code || git commit -m "Automated: Update stock hotspots RSS feed"
-
-        # 推送更改到 main 分支
-        # 使用 || true 是为了防止在没有新更改时 push 失败而导致整个 Action 失败
-        git push origin main || true
-
-
-    - name: List files in directory after script run
-      run: ls -la # 检查 stock_hotspots_feed.xml 是否存在于当前目录
+        git add *.txt || true
+        
+        # 检查是否有变化
+        if git diff --cached --quiet; then
+          echo "没有检测到文件变化，创建强制更新"
+          # 添加时间戳到文件中强制更新
+          echo "<!-- Last updated: $(date '+%Y-%m-%d %H:%M:%S') -->" >> stock_hotspots_feed.xml
+          git add stock_hotspots_feed.xml
+        fi
+        
+        # 提交更改
+        git commit -m "Update RSS feed - $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有需要提交的更改"
+        
+        # 推送到远程仓库
+        git push origin main || echo "推送失败"
