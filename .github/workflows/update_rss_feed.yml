@@ -1,77 +1,45 @@
-# .github/workflows/update_rss_feed.yml
-
 name: Update Stock Hotspots RSS Feed
 
-# 配置工作流的触发器
 on:
-  # 每日定时运行，例如每天 UTC 时间 01:00 (大约北京时间上午 9:00)
-  # 你可以根据需要调整 'cron' 表达式
   schedule:
-    - cron: '0 1 * * *'
-  # 允许手动从 GitHub Actions 页面触发此工作流
+    - cron: '0 1 * * *'  # 9:00 CST
+    - cron: '0 4 * * *'  # 12:00 CST
+    - cron: '0 9 * * *'  # 17:00 CST
   workflow_dispatch:
 
-# 定义工作流中的任务
 jobs:
-  build:
-    # 指定运行此任务的虚拟机环境
+  update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 允许工作流对仓库内容进行写入操作
+      contents: write
 
-    # 定义任务中的步骤
     steps:
-    - name: Checkout repository # 步骤1: 检出你的代码仓库
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Python # 步骤2: 设置 Python 环境
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.13' # 使用你程序兼容的Python版本，例如 '3.9' 或 '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies # 步骤3: 安装 Python 依赖
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests feedgen 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests feedgen
 
-    - name: Run Python script to generate feed # 步骤4: 运行 Python 脚本生成 RSS Feed
-      # 这里将 GitHub Secret 作为环境变量传递给脚本
-      env:
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }} # 将 EMAIL_PASSWORD 密钥作为环境变量传入
-      run: python stock_hotspots_scraper.py
+      - name: Generate RSS feed
+        run: python stock_hotspots_scraper.py
 
-    - name: Debug - Check file changes
-      run: |
-        echo "=== 检查文件状态 ==="
-        git status
-        echo "=== 检查文件内容 ==="
-        if [ -f stock_hotspots_feed.xml ]; then
-          echo "文件存在，显示前20行内容："
-          head -20 stock_hotspots_feed.xml
-          echo "=== 文件大小和时间戳 ==="
-          ls -la stock_hotspots_feed.xml
-        else
-          echo "文件不存在"
-        fi
-        echo "=== Git diff ==="
-        git diff stock_hotspots_feed.xml || echo "没有差异"
+      - name: Debug feed file
+        run: |
+          echo "Feed size:" $(stat -c "%s" stock_hotspots_feed.xml) "bytes"
 
-    - name: Force update RSS feed
-      run: |
-        # 确保文件被Git跟踪
-        git add stock_hotspots_feed.xml
-        git add *.txt || true
-        
-        # 检查是否有变化
-        if git diff --cached --quiet; then
-          echo "没有检测到文件变化，创建强制更新"
-          # 添加时间戳到文件中强制更新
-          echo "<!-- Last updated: $(date '+%Y-%m-%d %H:%M:%S') -->" >> stock_hotspots_feed.xml
+      - name: Commit & Push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add stock_hotspots_feed.xml
-        fi
-        
-        # 提交更改
-        git commit -m "Update RSS feed - $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有需要提交的更改"
-        
-        # 推送到远程仓库
-        git push origin main || echo "推送失败"
+          git commit -m "Update RSS feed $(date +'%F %T')" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
